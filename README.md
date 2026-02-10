@@ -1,12 +1,14 @@
 #  DYSHP:  peter's frontend for installing and loading dysh
 
+This is how I install my developer environment for dysh.
 
 By default, a new fresh anacona3 will be installed here.  `version=` is optional.
-Here you can only pick between two installs:
+Here you can only pick between three installs:
 
 
 1. `install1`:  install using `uv`, but use the `.venv` , not `uv run`
 2. `install2`:  install using `pip`
+3. `install3`:  install using `pip`, but dysh in dysh/venv
 
 
 ## Issues
