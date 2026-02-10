@@ -1,0 +1,19 @@
+#! /usr/bin/env bash
+#
+
+# python 
+rm -rf anaconda3 
+./install_anaconda3 wget=wgetc
+source anaconda3/python_start.sh
+pip3 install --upgrade pip
+
+
+# dysh
+rm -rf dysh
+git clone https://github.com/GreenBankObservatory/dysh
+cd dysh
+python -m venv venv
+source venv/bin/activate
+pip install -e .[all]
+
+
