@@ -7,3 +7,10 @@ Here you can only pick between two installs:
 
 1. `install1`:  install using `uv`, but use the `.venv` , not `uv run`
 2. `install2`:  install using `pip`
+
+
+## Issues
+
+1.  spyder doesn't know dysh, even if you use uv run
+2.  install2 doesn't do plotting
+
