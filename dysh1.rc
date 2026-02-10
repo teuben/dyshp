@@ -1,0 +1,3 @@
+source ~GBT/dyshp/dysh/.venv//bin/activate
+export DYSH_DATA=/home/teuben/GBT/dysh_data
+

@@ -1,0 +1,3 @@
+source ~GBT/dyshp/anaconda3/python_start.sh
+export DYSH_DATA=/home/teuben/GBT/dysh_data
+

@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+#
+
+# python + uv
+rm -rf anaconda3 
+./install_anaconda3 wget=wgetc
+source anaconda3/python_start.sh
+pip3 install --upgrade pip
+pip3 install uv
+
+# dysh
+rm -rf dysh
+git clone https://github.com/GreenBankObservatory/dysh
+cd dysh
+uv sync
+
+# to avoid having to prepend "uv run" all the time...
+source .venv/bin/activate
