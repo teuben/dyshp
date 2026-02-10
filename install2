@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
-#
+# install2
+
+cp dysh2.rc dysh.rc
 
 # python 
 rm -rf anaconda3 
