@@ -1,4 +1,4 @@
 source ~/GBT/dyshp/anaconda3/python_start.sh
 source ~/GBT/dyshp/dysh/.venv//bin/activate
-export DYSH=/home/teuben/GBT/dyshp/dysh
-export DYSH_DATA=/home/teuben/GBT/dysh_data
+export DYSH=$HOME/GBT/dyshp/dysh
+export DYSH_DATA=$HOME/GBT/dysh_data
