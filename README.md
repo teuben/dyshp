@@ -16,6 +16,7 @@ Here you can only pick between three installs:
 1.  spyder doesn't know dysh, even if you use uv run - side effect of a venv ?
 2.  install2 doesn't do plotting in spyder or notebook, is ok in dysh CLI
 3.  the `uv tool install dysh[all]` will muck with your ~/.local/bin and populate
+4.  in spyder need `%gui tk` to make it plot
 
 ## Notes
 
