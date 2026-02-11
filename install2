@@ -11,7 +11,12 @@ pip3 install --upgrade pip
 
 # dysh
 rm -rf dysh
-git clone https://github.com/GreenBankObservatory/dysh
+if [ -e dysh.tar ]; then
+  echo Using dysh.tar    
+  tar xf dysh.tar
+else
+  git clone https://github.com/GreenBankObservatory/dysh
+fi
 pip install -e dysh[all]
 
 

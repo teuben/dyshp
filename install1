@@ -12,13 +12,18 @@ pip3 install uv
 
 # dysh
 rm -rf dysh
-git clone https://github.com/GreenBankObservatory/dysh
+if [ -e dysh.tar ]; then
+  echo Using dysh.tar    
+  tar xf dysh.tar
+else
+  git clone https://github.com/GreenBankObservatory/dysh
+fi
 cd dysh
 uv sync
 
 #  is this needed ???
-uv tool install spyder
-uv pip install spyder-kernels
+#uv tool install spyder
+#uv pip install spyder-kernels
 # now: uv run spyder
 
 
