@@ -16,5 +16,11 @@ git clone https://github.com/GreenBankObservatory/dysh
 cd dysh
 uv sync
 
+#  is this needed ???
+uv tool install spyder
+uv pip install spyder-kernels
+# now: uv run spyder
+
+
 # to avoid having to prepend "uv run" all the time...
 source .venv/bin/activate
