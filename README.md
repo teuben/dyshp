@@ -42,3 +42,25 @@ use either one of:
    pip install uv
 ```
 
+## testing
+
+Some testing command for graphics...
+
+```
+
+import dysh
+
+import sys
+sys.path.append('/home/teuben/GBT/dyshp/dysh/.venv/lib/python3.12/site-packages')
+sys.path.append('/home/teuben/GBT/dyshp/dysh/src')
+
+import matplotlib
+matplotlib.get_backend()
+
+%gui tk
+
+
+from dysh.spectra.spectrum import Spectrum
+sp = Spectrum.fake_spectrum()
+sp.plot()
+```
