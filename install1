@@ -18,14 +18,10 @@ if [ -e dysh.tar ]; then
 else
   git clone https://github.com/GreenBankObservatory/dysh
 fi
+#   the next pip install may seem superfluous, but causes spyder to see dysh
+pip install -e dysh[all]
 cd dysh
 uv sync
-
-#  is this needed ???
-#uv tool install spyder
-#uv pip install spyder-kernels
-# now: uv run spyder
-
 
 # to avoid having to prepend "uv run" all the time...
 source .venv/bin/activate
