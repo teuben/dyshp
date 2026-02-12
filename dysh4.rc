@@ -1,0 +1,4 @@
+# dysh4
+source ~/GBT/dyshp/anaconda3/python_start.sh
+unset DYSH
+export DYSH_DATA=$HOME/GBT/dysh_data
