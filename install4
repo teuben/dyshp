@@ -10,6 +10,7 @@ source anaconda3/python_start.sh
 pip3 install --upgrade pip
 
 # dysh
+rm -rf dysh
 pip install dysh[nb]
 
 
