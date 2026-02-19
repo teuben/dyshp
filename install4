@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+# install4
+
+cp dysh4.rc dysh.rc
+
+# python 
+rm -rf anaconda3 
+./install_anaconda3 wget=wgetc
+source anaconda3/python_start.sh
+pip3 install --upgrade pip
+
+# dysh
+rm -rf dysh
+pip install dysh[nb]
+
+
