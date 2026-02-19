@@ -58,7 +58,7 @@ import matplotlib
 matplotlib.get_backend()
 
 %gui tk
-
+->  backend is 'tkagg'
 
 from dysh.spectra.spectrum import Spectrum
 sp = Spectrum.fake_spectrum()
