@@ -9,6 +9,9 @@ Qmpl   = True
 
 print('Qdysh, Qbatch, Qmpl:',Qdysh, Qbatch, Qmpl)
 
+if Qbatch and Qmpl:
+    import matplotlib
+    matplotlib.use("Agg")
 
 if Qdysh:
     from dysh.spectra.spectrum import Spectrum
@@ -19,20 +22,20 @@ if Qdysh:
     p2 = f.plot(xaxis_unit="km/s")
 
 if Qmpl:
-    if Qbatch:
-        import matplotlib
-        matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     plt.figure(11)
     plt.plot([0,3,1])
     if Qbatch:
-        plt.savefig("fake_plot2.png")
+        png = "fake_plot2.png"
+        print(f"Written {png}")        
+        plt.savefig(png)
     else:
         plt.show()
     # figure 12 doesn't show till 11 is gone
     plt.figure(12)
     plt.plot([1,2,4,2,1,3])
-    plt.show()
+    if not Qbatch:
+        plt.show()
 
 
 if Qdysh:
