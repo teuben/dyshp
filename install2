@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-# install2
+# install2:  developer install using pure pip, no venv
 
 cp dysh2.rc dysh.rc
 
@@ -8,6 +8,8 @@ rm -rf anaconda3
 ./install_anaconda3 wget=wgetc
 source anaconda3/python_start.sh
 pip3 install --upgrade pip
+#   warning
+pip install -r requirements.txt
 
 # dysh
 rm -rf dysh

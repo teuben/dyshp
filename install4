@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-# install4
+# install4: user pip install. not for developers
 
 cp dysh4.rc dysh.rc
 

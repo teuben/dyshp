@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-# install1
+# install1; developer install, using uv
 
 cp dysh1.rc dysh.rc
 

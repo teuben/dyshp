@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-# install3
+# install3: developer install using pip and venv
 
 cp dysh3.rc dysh.rc
 
