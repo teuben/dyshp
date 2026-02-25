@@ -1,0 +1,2 @@
+#  dysh doesn't use this, but for a pip install (as opposed to uv) you need this for pytest
+pytest-timeout 
