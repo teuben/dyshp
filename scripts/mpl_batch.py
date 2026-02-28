@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 plt.figure(1)
 plt.plot([0,3,1])
 if Qbatch:
+    #  also works in interactive mode
     png = "mpl_plot1.png"
     print(f"Written {png}")        
     plt.savefig(png)
