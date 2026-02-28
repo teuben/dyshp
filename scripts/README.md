@@ -1,9 +1,11 @@
+# 1. Python scripts trying mpl and dysh type plotting
+
 mpl_simple1.py  shows one plot
 mpl_simple2.py  shows two plots at the same time
 mpl_batch.py    show how to plot or create plotfile using --batch
 
 dysh_plot1.py   shows one plot, --batch also available
-dysh_plot2.py   shows two plots, --batch also availableb
+dysh_plot2.py   shows two plots
 
 In the  mpl approach, ctrl-W closes one window at the time, or click on the 'X' to close window
 
