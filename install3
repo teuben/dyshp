@@ -12,7 +12,6 @@ pip3 install --upgrade pip
 
 # dysh
 rm -rf dysh
-git clone https://github.com/GreenBankObservatory/dysh
 if [ -e dysh.tar ]; then
   echo Using dysh.tar
   tar xf dysh.tar
@@ -22,6 +21,6 @@ fi
 cd dysh
 python -m venv venv
 source venv/bin/activate
-pip install -e .[all]
+pip install --group dev -e .[all]
 
 
