@@ -12,7 +12,7 @@ f = Spectrum.fake_spectrum()
 p = f.plot()
 
 # save the plot regardless of mode
-png = 'fake_plot1.png'
+png = 'dysh_plot1.png'
 p.savefig(png)
 print(f"Wrote {png}")
 
